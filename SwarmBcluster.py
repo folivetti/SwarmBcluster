@@ -30,7 +30,7 @@ from BiclusterFitness import BiclusterFitness
 __credits__ = ["Fabrício Olivetti de França"]
 __license__ = "GPL"
 __version__ = "1.0.0"
-__maintainer__ = ""Fabrício Olivetti de França""
+__maintainer__ = "Fabrício Olivetti de França"
 __email__ = "folivetti@ufabc.edu.br"
 __status__ = "Production"
 
@@ -81,7 +81,7 @@ class SwarmBCluster(BiclusterFitness):
             mm = b['model']['mm']
             p = np.tile(mr, (mc.shape[0],1)).T + np.tile(mc, (mr.shape[0],1)) - mm
             r = (p-bicdata)**2
-            metadata[:,i] = np.array(map(int,np.all(r<=self.delta,axis=1)))
+            metadata[:,i] = np.array(list(map(int,np.all(r<=self.delta,axis=1))))
         return metadata
 
     def remodel( self, data, idx ):

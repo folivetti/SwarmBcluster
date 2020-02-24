@@ -19,7 +19,7 @@ __author__ = "Fabrício Olivetti de França"
 __credits__ = ["Fabrício Olivetti de França"]
 __license__ = "GPL"
 __version__ = "1.0.0"
-__maintainer__ = ""Fabrício Olivetti de França""
+__maintainer__ = "Fabrício Olivetti de França"
 __email__ = "folivetti@ufabc.edu.br"
 __status__ = "Production"
 
